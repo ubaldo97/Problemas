@@ -12,7 +12,7 @@ package Soluciones;
 public class EsUnico {
      /**
      * Enunciado del Problema:
-  implementar un algoritmo para determinar si una cadena tiene solo conjuntoCaracteres únicos(sin repetir). 
+  implementar un algoritmo para determinar si una cadena tiene solo caracteres únicos(sin repetir). 
      *  ¿Qué pasa si no puede utilizar estructuras de datos adicionales? (restriccion)
      */
    
@@ -40,13 +40,13 @@ public class EsUnico {
  
  NOTA: Tambien se podría argumentar que el tiempo de complejidad es O(1)
  ya que ciclo for nunca itera más de 128 veces, en este caso se puede expresar
- el tiempo de complejidad como O(c) siendo "c" el tamaño del conjunto de conjuntoCaracteres
+ el tiempo de complejidad como O(c) siendo "c" el tamaño del conjunto de caracteres
  */
     
      public static void main(String[] args){
         //Casos de prueba de ejemplo
         String prueba = "Hola mundo"; //(contiene 2 "o" por lo tanto no es unico)
-        String prueba2 = "abcde(fg)h$#^";//(es unico ya que no se repiten conjuntoCaracteres)
+        String prueba2 = "abcde(fg)h$#^";//(es unico ya que no se repiten caracteres)
         boolean respuesta;
         respuesta = esUnico(prueba); //llamamos a nuestro método y almacenamos la respuesta
         System.out.println(respuesta);// mostramos respuesta en pantalla 
